@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.1/build/global/luxon.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/normalizr@3.6.2/dist/normalizr.browser.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/style.scss">
+    <title>Info</title>
+</head>
+<body class="body">
+    <section>
+        <ul>Información del proceso</ul>
+            <li>Argumentos de entrada : <%= proceso.argumentos %></li>
+            <li>Nombre Plataforma: <%= proceso.plataforma %></li>
+            <li>Version de Node: <%= proceso.node_version %></li>
+            <li>Memoria total reservada: <%= proceso.memory_rss %> bytes</li>
+            <li>Path de ejecución: <%= proceso.path_exec %></li>
+            <li>Process ID: <%= proceso.processid %></li>
+            <li>Carpeta del proyecto: <%= proceso.carpeta %></li>
+            <li>Cantidad de Procesadores: <%= proceso.cant_proc %></li>
+    </section>
+</body>
+</html>

@@ -1,0 +1,110 @@
+#tablaProductos {
+  padding-top: 20px !important;
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+}
+
+#tablaProductos .table {
+  border: 1px solid black;
+}
+
+#tablaProductos td, #tablaProductos tr {
+  padding: 20px;
+  background-color: #383333;
+  color: white;
+}
+
+#tablaProductos tbody tr:nth-child(odd) {
+  background-color: #777574;
+  color: white;
+}
+
+#tablaProductos tbody tr:nth-child(even) {
+  background-color: #383333;
+  color: white;
+}
+
+#tablaProductos p {
+  padding-top: 5px;
+}
+
+.body {
+  padding: 20px;
+}
+
+.formulario {
+  background-color: #0676ff;
+  padding: 20px;
+}
+
+.formulario h1 {
+  color: white;
+}
+
+.formulario form label {
+  color: white;
+}
+
+.loginIn {
+  background-color: #06ff72;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.loginIn h1 {
+  color: black;
+}
+
+.logOut {
+  background-color: #959a97;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.logOut h1 {
+  color: black;
+}
+
+.errorRegister {
+  background-color: #b03232;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.errorRegister h1 {
+  color: black;
+}
+
+.errorLogin {
+  background-color: #b03232;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.errorLogin h1 {
+  color: black;
+}
+
+.chat {
+  background-color: #ffff01;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.chat h1 {
+  color: black;
+}
+
+.chat form label {
+  color: black;
+}
+
+.chat #inputText {
+  padding-bottom: 20px;
+}
+
+.chat p {
+  display: inline;
+  margin-top: 20px;
+}
+/*# sourceMappingURL=style.css.map */

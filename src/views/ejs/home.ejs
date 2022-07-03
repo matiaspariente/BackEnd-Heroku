@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.1/build/global/luxon.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/normalizr@3.6.2/dist/normalizr.browser.min.js"></script>
+    <title>Home</title>
+</head>
+<body class="body">
+    <section class="loginIn">
+            <h1 id="mensajeBienvenida">Bienvenido  <%= usuario.username %></h1>
+            <a href="/logout">
+                <button>Desloguearse</button>
+            </a>
+        </section>
+        <section class="formulario">
+            <h1>Formulario Ingreso de productos</h1>
+            <form id="userForm">
+                <label>Titulo</label>
+                <input name="title" type="text">
+                <label>Precio</label>
+                <input name="price" type="number">
+                <label>Thumbnail</label>
+                <input name="thumbnail">
+                <button id="formBtn">Enviar</button>
+                <button id="testBtn">Productos-Test</button>
+            </form>
+            <div>
+                <table id="tablaProductos"></table>
+            </div>
+        </section>
+        <section class="chat">
+            <h1>Centro De Mensajes</h1>
+            <h1 id=compresionText></h1>
+            <div id="inputText">
+                <form id="chatForm">
+                    <label>Mail</label>
+                    <input name="id" type="text">
+                    <label>Nombre</label>
+                    <input name="nombre" type="text">
+                    <label>Apellido</label>
+                    <input name="apellido" type="text">
+                    <label>Edad</label>
+                    <input name="edad" type="number">
+                    <label>Alias</label>
+                    <input name="alias" type="text">
+                    <label>Avatar</label>
+                    <input name="avatar">
+                    <label>Mensaje</label>
+                    <input name="text" type="text" id="chatBox">
+                    <button id="chatBtn">Enviar</button>
+                </form>
+            </div>
+            <p id="log"></p>
+        </section>   
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

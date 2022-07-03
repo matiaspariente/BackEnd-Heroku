@@ -1,0 +1,94 @@
+#tablaProductos {
+    padding-top: 20px !important;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    .table{
+        border: 1px solid rgb(0, 0, 0)
+    }
+    td,tr {
+        padding: 20px;
+        background-color: #383333;
+        color: white;
+    }
+    tbody tr:nth-child(odd) {
+        background-color: #777574;
+        color: white;
+      }
+    tbody tr:nth-child(even) {
+        background-color: #383333;
+        color: white;
+      }
+    p{
+        padding-top: 5px;
+    }
+}
+
+.body{
+    padding: 20px;
+}
+
+.formulario{
+    background-color: rgb(6, 118, 255);
+    padding: 20px;
+    h1{
+        color: white;
+    }
+    form label{
+        color: white;
+    }
+}
+
+.loginIn{
+    background-color: rgb(6, 255, 114);
+    padding: 20px;
+    margin-bottom: 20px;
+    h1{
+        color: rgb(0, 0, 0);
+    }
+}
+
+.logOut{
+    background-color: rgb(149, 154, 151);
+    padding: 20px;
+    margin-bottom: 20px;
+    h1{
+        color: rgb(0, 0, 0);
+    }
+}
+
+.errorRegister{
+    background-color: rgb(176, 50, 50);
+    padding: 20px;
+    margin-bottom: 20px;
+    h1{
+        color: rgb(0, 0, 0);
+    }
+}
+
+.errorLogin{
+    background-color: rgb(176, 50, 50);
+    padding: 20px;
+    margin-bottom: 20px;
+    h1{
+        color: rgb(0, 0, 0);
+    }
+}
+
+.chat{
+    background-color: rgb(255, 255, 1);
+    padding: 20px;
+    margin-top: 50px;
+    h1{
+        color: black;
+    }
+    form label{
+        color: rgb(0, 0, 0);
+    }
+    #inputText{
+        padding-bottom: 20px;
+    }
+    p{
+        display: inline;
+        margin-top: 20px;
+    }
+}
