@@ -195,16 +195,18 @@ passport.deserializeUser(async(username, done)=>{
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
-/* app.use(expressSession({ // se persiste SESSIONS en Mongo
+app.use(expressSession({ // se persiste SESSIONS en Mongo
     store: MongoStore.create({
-        mongoUrl: process.env._MONGO_URL,
+        //mongoUrl: process.env._MONGO_URL,
+        mongoUrl: "mongodb+srv://coderhouse:coderhouse@matiaspariente.qctoeul.mongodb.net/?retryWrites=true&w=majority",
         mongoOptions: advancedOptions
     }),
-    secret: process.env._SESSION_SECRET,
+    //secret: process.env._SESSION_SECRET,
+    secret:"secret",
     resave: true,
     cookie: { maxAge: 1000 *60 * 10 },
     saveUninitialized:true
-})) */
+})) 
 
 app.use(passport.initialize());
 app.use(passport.session());
