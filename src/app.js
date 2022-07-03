@@ -197,12 +197,10 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 app.use(expressSession({ // se persiste SESSIONS en Mongo
     store: MongoStore.create({
-        //mongoUrl: process.env._MONGO_URL,
-        mongoUrl: "mongodb+srv://coderhouse:coderhouse@matiaspariente.qctoeul.mongodb.net/?retryWrites=true&w=majority",
+        mongoUrl: process.env._MONGO_URL,
         mongoOptions: advancedOptions
     }),
-    //secret: process.env._SESSION_SECRET,
-    secret:"secret",
+    secret: process.env._SESSION_SECRET,
     resave: true,
     cookie: { maxAge: 1000 *60 * 10 },
     saveUninitialized:true
