@@ -30,7 +30,7 @@ let args = process.argv.slice(2);
 
 let options = {
     default:{
-        port:8050,
+        port: process.env.PORT || 8050,
         modo:"fork"
     },
 }
